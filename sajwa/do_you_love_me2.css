@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;  /* centers container vertically & horizontally */
+  height: 100vh;
+  background-color: #ffe6e9;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  color: #e91e63;
+  margin-bottom: 20px;  /* space between text and GIF */
+  padding: 0 20px;
+}
+
+/* GIF styling */
+.love-gif {
+  width: 200px;  /* adjust size */
+  height: auto;
+  border-radius: 20px; /* optional: rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  h2 {
+    font-size: 40px;
+  }
+  .love-gif {
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 32px;
+  }
+  .love-gif {
+    width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .love-gif {
+    width: 100px;
+  }
+}
